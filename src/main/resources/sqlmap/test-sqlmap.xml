@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="test">
+
+    <!-- 查询 -->
+    <select id="getTest" resultClass="java.util.HashMap">
+		SELECT '11111' AS imageurl,
+			'22222' AS goods_id,
+			'33333' AS product_id,
+			'面膜' AS goods_name,
+			'100' AS price,
+			'0.9' AS discount_rate
+		FROM DUAL 
+    </select>
+    
+</sqlMap>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+	<service name="RegionService">
+	    <description>
+	        RegionService
+	    </description>
+	    <parameter name="ServiceClass">
+	        com.hm.WMS.region.web.RegionController
+	    </parameter>
+	    <messageReceivers>
+	        <messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out"
+	         class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	    </messageReceivers>
+		<parameter name="ServiceObjectSupplier">
+			org.apache.axis2.extensions.spring.receivers.SpringAppContextAwareObjectSupplier  
+    	</parameter>
+		<parameter name="SpringBeanName">regionControl</parameter>
+	</service>
+	<service name="GoodsAndProductService">
+	    <description>
+	        GoodsService
+	    </description>
+	    <parameter name="ServiceClass">
+	        com.hm.WMS.goods.web.GoodsAndProductControl
+	    </parameter>
+	    <messageReceivers>
+	        <messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out"
+	         class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	    </messageReceivers>
+		<parameter name="ServiceObjectSupplier">
+			org.apache.axis2.extensions.spring.receivers.SpringAppContextAwareObjectSupplier  
+    	</parameter>
+		<parameter name="SpringBeanName">goodsControl</parameter>
+	</service>
+	<service name="orderStatusService">
+	    <description>
+	        OrderStatusService
+	    </description>
+	    <parameter name="ServiceClass">
+	        com.hm.WMS.order.web.OrderAxisController
+	    </parameter>
+	    <messageReceivers>
+	        <messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out"
+	         class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	    </messageReceivers>
+		<parameter name="ServiceObjectSupplier">
+			org.apache.axis2.extensions.spring.receivers.SpringAppContextAwareObjectSupplier  
+    	</parameter>
+		<parameter name="SpringBeanName">orderAxisController</parameter>
+	</service>
+ </serviceGroup>

@@ -8,7 +8,7 @@ public class TaskTest {
 	
 	private static int i = 0;
 	
-	@Scheduled(cron = "*/1 * * * * ? ")
+//	@Scheduled(cron = "*/1 * * * * ? ")
 	public void test(){
 		System.out.println(++i);
 	}

@@ -1,3 +1,4 @@
+package com.hm.SSI.service;
 
 import java.util.List;
 
@@ -27,18 +28,6 @@ public class UserTest {
 	@Autowired
 	private MiUserManager muserManagerImpl;
 	
-	@Test
-	public void testOracleSelectAllUser(){
-		try {
-			List<User> userList = ouserManagerImpl.selectAllUser();
-			for (User user : userList) {
-				System.out.println("Id:"+user.getId()+"   name:"+user.getName());
-			}
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 	
 	@Test
 	public void testMysqlSelectAllUser(){
@@ -52,5 +41,20 @@ public class UserTest {
 			e.printStackTrace();
 		}
 	}
+
+	
+	
+//	@Test
+//	public void testOracleSelectAllUser(){
+//		try {
+//			List<User> userList = ouserManagerImpl.selectAllUser();
+//			for (User user : userList) {
+//				System.out.println("Id:"+user.getId()+"   name:"+user.getName());
+//			}
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 	
 }

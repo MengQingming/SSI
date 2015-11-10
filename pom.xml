@@ -83,6 +83,15 @@
 		</dependency>
 		<!-- Spring end -->
 		
+		<!-- Hessian begin -->
+		<dependency>
+			<groupId>com.caucho</groupId>
+			<artifactId>hessian</artifactId>
+			<version>4.0.7</version>
+		</dependency>
+		<!-- Hessian end -->
+		
+		
 		<dependency>
 			<groupId>c3p0</groupId>
 			<artifactId>c3p0</artifactId>

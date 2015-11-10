@@ -1,6 +1,10 @@
 package com.hm.SSI.model;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
+	
+	private static final long serialVersionUID = 6134819421565502823L;
 	
 	private Integer id;
 	private String name;

@@ -20,6 +20,7 @@
 	default-autowire="byName" default-lazy-init="false">
 
 	<import resource="/applicationContext-Schedule.xml"/>
+	<import resource="/application-HessianService.xml"/>
 	
 	<context:component-scan base-package="com.hm.SSI" />
 	<mvc:annotation-driven />

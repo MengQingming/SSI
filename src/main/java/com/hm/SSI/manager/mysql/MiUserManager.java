@@ -8,4 +8,6 @@ public interface MiUserManager {
 	
 	public List<User> selectAllUser() throws Exception;
 	
+	public String getName(String name) throws Exception;
+	
 }

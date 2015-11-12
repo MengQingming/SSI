@@ -12,9 +12,12 @@
 	<context:annotation-config />
 	<context:component-scan base-package="com.hm.SSI" />
 	
+	<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+	<bean id="httpRequestHandlerAdapter" class="org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter"/> 
+	
 	<bean id="muserManagerImpl" class="com.hm.SSI.manager.mysql.impl.MuserManagerImpl"></bean>
 	
-	<bean name="/hessianManager" class="org.springframework.remoting.caucho.HessianServiceExporter">  
+	<bean name="/hessian/hessianManager" class="org.springframework.remoting.caucho.HessianServiceExporter">  
         <property name="service" ref="muserManagerImpl" />  
         <property name="serviceInterface" value="com.hm.SSI.manager.mysql.MiUserManager" />  
     </bean>  

@@ -24,4 +24,9 @@ public class MuserManagerImpl implements MiUserManager {
 		return userServiceImpl.selectAllUser();
 	}
 
+	@Override
+	public String getName(String name) throws Exception {
+		return name;
+	}
+
 }

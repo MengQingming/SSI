@@ -5,3 +5,4 @@
 	3、Schedule定时任务
 	4、RestFull服务接口
 	5、RMI远程调用
+	6、Hessian远程服务

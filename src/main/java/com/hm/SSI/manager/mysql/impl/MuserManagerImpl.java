@@ -10,7 +10,7 @@ import com.hm.SSI.manager.mysql.MiUserManager;
 import com.hm.SSI.model.User;
 import com.hm.SSI.service.IUserService;
 
-@Service
+@Service(value="muserManagerImpl")
 public class MuserManagerImpl implements MiUserManager {
 	
 	private Logger log = Logger.getLogger(MuserManagerImpl.class);

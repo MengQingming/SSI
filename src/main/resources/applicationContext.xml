@@ -29,5 +29,5 @@
 	<bean id="axisContext" class="org.apache.axis2.extensions.spring.receivers.ApplicationContextHolder" />
 	<!-- 配置RestTemplate -->
 	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate"/>
-
+	
 </beans>

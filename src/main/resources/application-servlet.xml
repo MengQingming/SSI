@@ -27,7 +27,7 @@
 
 	<!-- 试图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/pages/"></property>
+		<property name="prefix" value="/WEB-INF/views/"></property>
 		<property name="suffix" value=".jsp"></property>
 		<!--<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>-->
 	</bean>

@@ -31,4 +31,8 @@ public class UserController {
 		return userList;
 	}
 	
+	@RequestMapping(value="/index", method=RequestMethod.GET)
+	public String index(){
+		return "index";
+	}
 }

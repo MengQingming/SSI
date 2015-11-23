@@ -63,12 +63,13 @@
 	    <param-name>contextConfigLocation</param-name>
 	    <param-value>classpath*:application-servlet.xml</param-value>
 	  </init-param>
-	  <!-- <load-on-startup>1</load-on-startup> -->
+	  <load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 	  <servlet-name>SSI</servlet-name>
-	  <url-pattern>/*</url-pattern>
+	  <url-pattern>/</url-pattern>
 	</servlet-mapping>
+	
 	<!-- Spring Servlet End -->
 	
 	<!-- Hessian Begin -->
